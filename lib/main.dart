@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'FieldFlow Generador',
+      title: 'FS Generador',
       themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
       theme: _buildTheme(false),
       darkTheme: _buildTheme(true),
@@ -784,15 +784,15 @@ M:''';
                         isDark: isDark,
                         onCopy: templatesGenerated ? () => _copyTemplate(_getTemplate1(), 'INICIO') : null,
                         children: [
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('FOLIO', templatesGenerated ? folio : '---', isDark: isDark),
                             _InfoItem('CR', templatesGenerated ? cr : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('FECHA', templatesGenerated ? formattedDate : '---', isDark: isDark),
                             _InfoItem('IDC', idc, isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('ESTATUS', 'EN TRÁNSITO', fullWidth: true, isDark: isDark),
                           ]),
                         ],
@@ -809,34 +809,34 @@ M:''';
                         isDark: isDark,
                         onCopy: templatesGenerated ? () => _copyTemplate(_getTemplate2(), 'INTERVENCIÓN') : null,
                         children: [
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('FOLIO', templatesGenerated ? folio : '---', isDark: isDark),
                             _InfoItem('CR', templatesGenerated ? cr : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('FECHA', templatesGenerated ? formattedDate : '---', isDark: isDark),
                             _InfoItem('IDC', idc, isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('ESTATUS', 'CON ACCESO INTERVINIENDO EQUIPO', fullWidth: true, isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('EQUIPO', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('MARCA', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('MODELO', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('SERIE', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('SIAFF', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('PUESTO', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('HOSTNAME', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('MAC', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('IP', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('AREA', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
@@ -854,15 +854,15 @@ M:''';
                         isDark: isDark,
                         onCopy: templatesGenerated ? () => _copyTemplate(_getTemplate3(), 'CIERRE') : null,
                         children: [
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('FOLIO', templatesGenerated ? folio : '---', isDark: isDark),
                             _InfoItem('CR', templatesGenerated ? cr : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('FECHA', templatesGenerated ? formattedDate : '---', isDark: isDark),
                             _InfoItem('FALLA', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('IDC', idc, fullWidth: true, isDark: isDark),
                           ]),
                           // Diagnostico Box
@@ -901,35 +901,35 @@ M:''';
                               ],
                             ),
                           ),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('SOPORTE PRYMENET', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('SOPORTE WINDOWS', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('SOPORTE NACAR', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('EQUIPO', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('MARCA', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('MODELO', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('SERIE', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('SIAFF', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('PUESTO', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('HOSTNAME', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('MAC', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('IP', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('AREA', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('USUARIO', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
-                          _InfoRow([
+                          _buildInfoRow([
                             _InfoItem('VOBO', templatesGenerated ? '' : '---', isDark: isDark),
                             _InfoItem('M', templatesGenerated ? '' : '---', isDark: isDark),
                           ]),
@@ -1097,7 +1097,7 @@ class _TemplateCard extends StatelessWidget {
   }
 }
 
-Widget _InfoRow(List<Widget> items) {
+Widget _buildInfoRow(List<Widget> items) {
   return Row(
     crossAxisAlignment: CrossAxisAlignment.start,
     children: items,
