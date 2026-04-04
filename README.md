@@ -22,5 +22,11 @@ La labor de un **Ingeniero de Campo (IDC)** en entornos críticos y de alta dema
 - [ ] **Sincronización en la Nube**: Respaldo de configuraciones y personalización de plantillas.
 - [ ] **Módulo de Hardware**: Escaneo de códigos de barras y QR para entrada rápida de números de serie y modelos.
 
+### Anexos
+![image alt](https://github.com/JCEmiliano/app_gen/blob/ca81cadebb419d5056f11156cfd32af67165d999/Screenshot_1775319366.png)
+![image alt](https://github.com/JCEmiliano/app_gen/blob/ca81cadebb419d5056f11156cfd32af67165d999/Screenshot_1775319372.png)
+![image alt](https://github.com/JCEmiliano/app_gen/blob/ca81cadebb419d5056f11156cfd32af67165d999/Screenshot_1775319424.png)
+![image alt](https://github.com/JCEmiliano/app_gen/blob/ca81cadebb419d5056f11156cfd32af67165d999/Screenshot_1775319439.png)
+![image alt](https://github.com/JCEmiliano/app_gen/blob/ca81cadebb419d5056f11156cfd32af67165d999/Screenshot_1775319447.png)
 ---
 *Desarrollado por un IDC, para los IDCs.*
